@@ -12,6 +12,7 @@ Exemplo de uso:
 	executarRegras();
 </script>
 </code>
+<br /><br />
 
 A função addRegra é responsável por estabelecer as regras de direcionamento por país. 
 Ela recebe 3 parâmetros:
@@ -32,6 +33,7 @@ A regras são executadas de forma sequêncial. Isso significa que a ordem das re
 Por exemplo, vamos supor que eu queira uma regra para o Brasil, uma regra para quem estiver fora do Brasil e uma regra espefícia para a Espanha. 
 Nesse caso, a regra da Espanha deve ser colocada antes da regra de fora do Brasil, dessa forma:
 
+<code>
 <script src="https://lucashelion.com.br/dev/redirect-loc/assets/redirect-loc.js"></script>
 <script>
 	addRegra('BR', true, 'br.html');
@@ -39,5 +41,7 @@ Nesse caso, a regra da Espanha deve ser colocada antes da regra de fora do Brasi
 	addRegra('BR', false, 'xx.html');
 	executarRegras();
 </script>
+</code>
+<br /><br />
 
 Por fim, logo após as regras, deve-se invocar a função executarRegras() para que os redirecionamentos sejam executados.
