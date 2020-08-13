@@ -3,6 +3,7 @@ Funcionalidade que redireciona a página de acordo com o país do IP
 
 Exemplo de uso:
 
+<code>
 <script src="https://lucashelion.com.br/dev/redirect-loc/assets/redirect-loc.js"></script>
 <script>
 	addRegra('BR', true, '#');
@@ -10,7 +11,8 @@ Exemplo de uso:
 	addRegra('BR', false, 'xx.html');
 	executarRegras();
 </script>
-  
+</code>
+
 A função addRegra é responsável por estabelecer as regras de direcionamento por país. 
 Ela recebe 3 parâmetros:
  1) Sigla do país: string com 2 caracteres
